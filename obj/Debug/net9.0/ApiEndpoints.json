@@ -1,0 +1,267 @@
+[
+  {
+    "ContainingType": "GERTAR.Controllers.ProjetosController",
+    "Method": "GetProjetos",
+    "RelativePath": "api/Projetos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GERTAR.Modelos.TB_PROJETO, GERTAR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.ProjetosController",
+    "Method": "GetProjeto",
+    "RelativePath": "api/Projetos/{IdProjeto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GERTAR.Modelos.TB_PROJETO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.ProjetosController",
+    "Method": "DeleteTB_PROJETO",
+    "RelativePath": "api/Projetos/{IdProjeto}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.ProjetosController",
+    "Method": "Put",
+    "RelativePath": "api/Projetos/{IdProjeto}/{NmProjeto}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "NmProjeto",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GERTAR.Modelos.TB_PROJETO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.ProjetosController",
+    "Method": "Post",
+    "RelativePath": "api/Projetos/{NmProjeto}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "NmProjeto",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GERTAR.Modelos.TB_PROJETO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.RelatorioController",
+    "Method": "Get",
+    "RelativePath": "api/Relatorio/{IdUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GERTAR.Modelos.HISTORICO, GERTAR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.TarefasController",
+    "Method": "Put",
+    "RelativePath": "api/Tarefas",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tB_PROJETO_TAREFA",
+        "Type": "GERTAR.Modelos.TB_PROJETO_TAREFA",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.TarefasController",
+    "Method": "Post",
+    "RelativePath": "api/Tarefas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tB_PROJETO_TAREFA",
+        "Type": "GERTAR.Modelos.TB_PROJETO_TAREFA",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GERTAR.Modelos.TB_PROJETO_TAREFA",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.TarefasController",
+    "Method": "Get",
+    "RelativePath": "api/Tarefas/{IdProjeto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[GERTAR.Modelos.TB_PROJETO_TAREFA, GERTAR, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.TarefasController",
+    "Method": "Get",
+    "RelativePath": "api/Tarefas/{IdProjeto}/{IdTarefa}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdTarefa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GERTAR.Modelos.TB_PROJETO_TAREFA",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GERTAR.Controllers.TarefasController",
+    "Method": "Delete",
+    "RelativePath": "api/Tarefas/{IdProjeto}/{IdTarefa}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "IdProjeto",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "IdTarefa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
