@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GERTAR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dde76ed5f1aa0810adecba4db746ea27326b385")]
 [assembly: System.Reflection.AssemblyProductAttribute("GERTAR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GERTAR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
