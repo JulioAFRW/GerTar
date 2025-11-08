@@ -1,0 +1,6 @@
+@GERTAR_HostAddress = http://localhost:5058
+
+GET {{GERTAR_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
