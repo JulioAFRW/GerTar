@@ -14,9 +14,13 @@ REFINAMENTO:
 Perguntas a serem dirigidas ao PO visando o refinamento para futuras implementações ou melhorias:
 
 Quais são as operações de negócio permitidas por projeto e por tarefa (criar, editar, arquivar, reabrir, excluir fisicamente vs soft delete)?
+
 Qual o ciclo de vida de um projeto e de uma tarefa? Quais estados possíveis e transições permitidas?
+
 Existem regras de validação de negócio (por ex. uma tarefa não pode ser concluída se subtarefas abertas existirem)?
+
 Quando uma alteração deve gerar eventos/notifications (e-mails, webhooks, mensagens)? Ex.: mudança de status, atribuição, prazo alterado.
+
 Regras de propriedade: quem pode criar/editar/atribuir/arquivar projetos e tarefas?
 
 PONTOS DE MELHORIA NO PROJETO:
