@@ -52,6 +52,78 @@ CREATE TABLE [dbo].[TB_PROJETO_TAREFAS](
 
 GO
 
+USE [GERTAR]
+GO
+
+/****** Object:  Trigger [dbo].[TR_ATU_TAREFA]    Script Date: 10/11/2025 07:58:50 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE TRIGGER [dbo].[TR_ATU_TAREFA]
+
+ON [dbo].[TB_PROJETO_TAREFAS]
+
+AFTER UPDATE
+
+AS
+
+BEGIN
+
+INSERT INTO [dbo].[TB_PROJETO_TAREFAS_HIST]
+
+           ([ID_PROJETO]
+		   
+           ,[ID_TAREFA]
+		   
+           ,[TITULO]
+		   
+		   ,[DESCRICAO]
+		   
+           ,[PRIORIDADE]
+		   
+           ,[VENCIMENTO]
+		   
+           ,[COMENTARIO]
+		   
+           ,[STATUS_TAREFA]
+		   
+           ,[DT_ATUALIZACAO]
+		   
+           ,[ID_USUARIO])
+		   
+SELECT [ID_PROJETO]
+
+           ,[ID_TAREFA]
+		   
+           ,[TITULO]
+		   
+		   ,[DESCRICAO]
+		   
+           ,[PRIORIDADE]
+		   
+           ,[VENCIMENTO]
+		   
+           ,[COMENTARIO]
+		   
+           ,[STATUS_TAREFA]
+		   
+           ,[DT_ATUALIZACAO]
+		   
+           ,[ID_USUARIO] FROM deleted;
+		   
+END;
+
+GO
+
+ALTER TABLE [dbo].[TB_PROJETO_TAREFAS] ENABLE TRIGGER [TR_ATU_TAREFA]
+
+GO
+
+
 /****** Object:  Table [dbo].[TB_PROJETO_TAREFAS_HIST]    Script Date: 09/11/2025 19:00:42 ******/
 
 SET ANSI_NULLS ON
